@@ -1,0 +1,9 @@
+{% load i18n %}
+{% block content %}
+    <h3>Are You Sure ?!</h3>
+   <form method="post">
+       {% csrf_token %}
+       {{form}}
+       <input type="submit" value="Submit"/>
+   </form>
+{% endblock %}
