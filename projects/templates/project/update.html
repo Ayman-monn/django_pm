@@ -21,11 +21,13 @@
                         {% for field in form %}
                             <div class="mb-3">{{ field }}</div>
                         {% endfor %}
-                        <div class="me-auto text-muted small">
+                        <div class="d-flex my-2">
+                            <span class="me-auto text-muted small">
                             <i class="bi bi-clock"></i>
                                 <time datetime="{{ object.created_at }}">
                                     {{ object.created_at|naturaltime }}
                                 </time>
+                            </span>
                         </div>
                     </div>
                     <div class="card-footer">

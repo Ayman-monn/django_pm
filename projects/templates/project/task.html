@@ -30,7 +30,7 @@
    <form method="post" action="{% url 'Task_create' %}" class="d-flex">
       {% csrf_token %}
       <div class="input-group">
-          <input type="hidden" value="{{ projects.id }}" name="projects">
+          <input type="hidden" value="{{ object.id }}" name="projects">
           <input type="text" name="description" class="form-control" placeholder="{% trans 'New Task' %}" required>
           <input type="submit" class="btn btn-outline-dark" value="{% trans 'Add' %}"/>
 
