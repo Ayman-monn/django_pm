@@ -17,6 +17,10 @@ class Category(models.Model):
     def __str__(self):
         return self.name
 
+    class Meta:
+        verbose_name = _('category')
+        verbose_name_plural = _('category')
+
 
 class Projects(models.Model):
     title = models.CharField(max_length=255)
@@ -37,6 +41,10 @@ class Projects(models.Model):
     def __str__(self):
         return self.title
 
+    class Meta:
+        verbose_name = _('Project')
+        verbose_name_plural = _('Projects')
+
 
 class Task(models.Model):
     description = models.TextField()
@@ -45,3 +53,7 @@ class Task(models.Model):
 
     def __str__(self):
         return self.description
+
+    class Meta:
+        verbose_name = _('Task')
+        verbose_name_plural = _('Task')
