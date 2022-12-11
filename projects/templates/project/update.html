@@ -36,10 +36,10 @@
                                 <i class="bi bi-save"></i>
                                 {% trans 'Save' %}
                             </button>
-                            <button class="btn btn-danger">
-                                <i class="bi bi-trash"></i>
-                                {% trans 'Delete' %}
-                            </button>
+                            <a class="btn btn-danger" href="{% url 'Project_delete' object.id %}">
+                              <i class="bi bi-trash"></i>
+                              {% trans 'Delete' %}
+                            </a>
                         </div>
                     </div>
                 </div>

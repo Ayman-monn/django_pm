@@ -24,7 +24,6 @@ class ProjectsAdmin(admin.ModelAdmin):
         return query
 
 
-
 @admin.register(models.Task)
 class TaskAdmin(admin.ModelAdmin):
     list_display = ['id', 'description', 'projects', 'is_completed' ]
